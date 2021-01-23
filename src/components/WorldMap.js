@@ -20,6 +20,7 @@ const height = 600;
 const timeFactor = 60;
 
 class WorldMap extends Component {
+
     constructor() {
         super();
         this.state = {

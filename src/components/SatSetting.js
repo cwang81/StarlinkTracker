@@ -27,7 +27,8 @@ class SatSettingForm extends Component {
                                 required: true,
                                 message: "Please input your Longitude"
                             }
-                        ]
+                        ],
+                        initialValue: -122
                     })(
                         <InputNumber
                             min={-180}
@@ -45,7 +46,8 @@ class SatSettingForm extends Component {
                                 required: true,
                                 message: "Please input your Latitude"
                             }
-                        ]
+                        ],
+                        initialValue: 38
                     })(
                         <InputNumber
                             placeholder="Please input Latitude"
@@ -63,7 +65,8 @@ class SatSettingForm extends Component {
                                 required: true,
                                 message: "Please input your Elevation"
                             }
-                        ]
+                        ],
+                        initialValue: 0
                     })(
                         <InputNumber
                             placeholder="Please input Elevation"
@@ -74,14 +77,15 @@ class SatSettingForm extends Component {
                     )}
                 </Form.Item>
 
-                <Form.Item label="Altitude(degrees)">
+                <Form.Item label="Search Angle(degrees)">
                     {getFieldDecorator("altitude", {
                         rules: [
                             {
                                 required: true,
                                 message: "Please input your Altitude"
                             }
-                        ]
+                        ],
+                        initialValue: 45
                     })(
                         <InputNumber
                             placeholder="Please input Altitude"
@@ -99,7 +103,8 @@ class SatSettingForm extends Component {
                                 required: true,
                                 message: "Please input your Duration"
                             }
-                        ]
+                        ],
+                        initialValue: 5
                     })(
                         <InputNumber
                             placeholder="Please input Duration"
