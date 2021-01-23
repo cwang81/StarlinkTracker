@@ -57,7 +57,7 @@ class Main extends Component {
         const {latitude, longitude, elevation, altitude} = setting;
 
         // step 2: prepare the url
-        const url = `/api/${NEARBY_SATELLITE}/${latitude}/${longitude}/${elevation}/${altitude}/${STARLINK_CATEGORY}/&apiKey=${SAT_API_KEY}`;
+        const url = `api/${NEARBY_SATELLITE}/${latitude}/${longitude}/${elevation}/${altitude}/${STARLINK_CATEGORY}/&apiKey=${SAT_API_KEY}`;
 
         // step 3: make ajax call
         this.setState({
